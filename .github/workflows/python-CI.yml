@@ -20,9 +20,9 @@ jobs:
         with:
           python-version: '3.9'
 
-      # Debug Step: Check Test Files
-      - name: Debug Test Files
-        run: ls -la
+      # Debug Step: Check Requirements File Content (for Windows)
+      - name: Debug Requirements Content
+        run: type requirements.txt
 
       # Step 3: Install dependencies
       - name: Install dependencies

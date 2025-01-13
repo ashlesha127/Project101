@@ -20,6 +20,13 @@ jobs:
         with:
           python-version: '3.9'
 
+      # Debug Step: Check Environment
+      - name: Debug Environment
+        run: |
+          which pip
+          pip --version
+          ls -la
+
       # Step 3: Install dependencies
       - name: Install dependencies
         run: |
@@ -29,5 +36,3 @@ jobs:
       # Step 4: Run tests
       - name: Run tests
         run: pytest
-
-
